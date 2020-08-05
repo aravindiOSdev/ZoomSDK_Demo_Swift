@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController restorationIdentifier="ViewController" storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="ZoomPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvg-au-FL8">
+                                <rect key="frame" x="132" y="194" width="150" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eOE-D7-bvY"/>
+                                    <constraint firstAttribute="width" constant="150" id="jan-hq-GUf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAndStartMeeting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w2O-Wz-9El"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQn-1v-kIN">
+                                <rect key="frame" x="132" y="254" width="150" height="30"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="T42-Yp-h5m"/>
+                                    <constraint firstAttribute="height" constant="30" id="kRM-rd-xHO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Join">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="joinZoomMeeting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dmu-Lp-0Oh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ks-nT-Bn7">
+                                <rect key="frame" x="132" y="314" width="150" height="30"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SKR-9E-Udz"/>
+                                    <constraint firstAttribute="width" constant="150" id="VZx-Vo-Fz8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="ReStartMeeting">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startMeeting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X3t-jE-obd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1e-z4-cpN">
+                                <rect key="frame" x="20" y="74" width="70" height="30"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="9Cl-7T-9GI"/>
+                                    <constraint firstAttribute="height" constant="30" id="usq-PB-dxe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Ef-pX-xPO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zvg-au-FL8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="3jf-hy-Uq2"/>
+                            <constraint firstItem="qQn-1v-kIN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6ce-1e-AWn"/>
+                            <constraint firstItem="R1e-z4-cpN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DJx-U9-q6d"/>
+                            <constraint firstItem="R1e-z4-cpN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Ofj-jb-vTW"/>
+                            <constraint firstItem="zvg-au-FL8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dUy-iD-FZW"/>
+                            <constraint firstItem="9Ks-nT-Bn7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gBL-yt-MZ5"/>
+                            <constraint firstItem="9Ks-nT-Bn7" firstAttribute="top" secondItem="qQn-1v-kIN" secondAttribute="bottom" constant="30" id="mGo-UT-KgZ"/>
+                            <constraint firstItem="qQn-1v-kIN" firstAttribute="top" secondItem="zvg-au-FL8" secondAttribute="bottom" constant="30" id="w52-jZ-Lri"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Yv-pK-uzP"/>
+                    <connections>
+                        <outlet property="joinButton" destination="qQn-1v-kIN" id="Rm6-00-C10"/>
+                        <outlet property="loginButton" destination="zvg-au-FL8" id="Nvl-NP-C5V"/>
+                        <outlet property="logoutButton" destination="R1e-z4-cpN" id="bXr-SS-AbV"/>
+                        <outlet property="reStartButton" destination="9Ks-nT-Bn7" id="Upr-a0-QTo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="135.9375"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "6255e8f3d033140cd60b84d7f94642df"
+build_time: [1596386659, 357347000]
+inputs:
+  "/Users/k.chinnababu/Desktop/ZoomPOC/ZoomPOC/ViewController.swift": [1596385860, 328132825]
+  "/Users/k.chinnababu/Desktop/ZoomPOC/ZoomPOC/AppDelegate.swift": [1596386659, 174029436]
+  "/Users/k.chinnababu/Desktop/ZoomPOC/ZoomPOC/ZoomService.swift": [1596385860, 340812972]
